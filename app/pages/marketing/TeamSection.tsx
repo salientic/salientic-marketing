@@ -12,22 +12,13 @@ type TeamMember = {
   description: string;
   initials: string;
   image?: string;
+  imagePosition?: string;
   social: {
     linkedin?: string;
   };
 };
 
 const teamMembers: TeamMember[] = [
-  {
-    name: "John Diptikanta",
-    role: "Founding Engineer",
-    description:
-      "Part of the founding team, architecting intelligent automation and platform solutions.",
-    initials: "JD",
-    social: {
-      linkedin: "#",
-    },
-  },
   {
     name: "Abhishek Agarwala",
     role: "Founder & CEO",
@@ -39,7 +30,30 @@ const teamMembers: TeamMember[] = [
       linkedin: "https://www.linkedin.com/in/abhishek-agarwala",
     },
   },
-
+  {
+    name: "Satya Prasad",
+    role: "Founding Product Manager",
+    description:
+      "Part of the founding team, shaping product strategy and driving customer-centric innovation.",
+    initials: "SP",
+    image: "/assets/profile-pics/sathya.jpeg",
+    imagePosition: "center 20%",
+    social: {
+      linkedin: "https://www.linkedin.com/in/satya-prasad-pamula-4583a456",
+    },
+  },
+  {
+    name: "John Diptikanta",
+    role: "Founding Engineer",
+    description:
+      "Part of the founding team, architecting intelligent automation and platform solutions.",
+    initials: "JD",
+    image: "/assets/profile-pics/john.jpeg",
+    imagePosition: "center 25%",
+    social: {
+      linkedin: "https://linkedin.com/in/johndpknt",
+    },
+  },
   {
     name: "Siddhant Loya",
     role: "Founding Engineer",
@@ -59,7 +73,7 @@ export function TeamSection() {
       id='team'
       className='py-20 px-4 bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50'
     >
-      <div className='container mx-auto max-w-6xl'>
+      <div className='container mx-auto max-w-7xl'>
         <div className='text-center mb-16'>
           <h2 className='text-4xl md:text-5xl font-bold text-slate-900 mb-4'>
             Meet Our Team
@@ -68,25 +82,24 @@ export function TeamSection() {
             The founding team building the future of automotive retail
           </p>
         </div>
-        <div className='grid md:grid-cols-3 gap-8'>
+        <div className='grid md:grid-cols-4 gap-6'>
           {teamMembers.map((member) => {
-            const { name, role, description, initials, image, social } = member;
-            const isCEO = role === "Founder & CEO";
+            const { name, role, description, initials, image, imagePosition, social } = member;
             return (
               <Card
                 key={name}
-                className={`bg-white border border-slate-200 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 ${
-                  isCEO ? "md:scale-110 md:z-10" : ""
-                }`}
+                className='bg-white border border-slate-200 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1'
               >
                 <CardContent className='p-8 text-center'>
                   <div className='mb-6 flex justify-center'>
-                    <Avatar
-                      className={`border-4 border-blue-100 ${
-                        isCEO ? "h-40 w-40" : "h-32 w-32"
-                      }`}
-                    >
-                      {image && <AvatarImage src={image} alt={name} />}
+                    <Avatar className='border-4 border-blue-100 h-32 w-32'>
+                      {image && (
+                        <AvatarImage
+                          src={image}
+                          alt={name}
+                          style={imagePosition ? { objectPosition: imagePosition } : undefined}
+                        />
+                      )}
                       <AvatarFallback className='text-3xl font-bold bg-gradient-to-br from-blue-100 to-blue-200 text-blue-700'>
                         {initials}
                       </AvatarFallback>
