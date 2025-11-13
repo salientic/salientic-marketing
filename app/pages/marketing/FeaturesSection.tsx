@@ -1,130 +1,91 @@
 import { Card, CardContent } from "~/components/molecules/card";
-import { Phone, Zap, Calendar, Database, CheckCircle2 } from "lucide-react";
+import { Button } from "~/components/atoms/button";
+import { Users, Wrench, TrendingUp, ShoppingBag } from "lucide-react";
 
 export function FeaturesSection() {
   return (
-    <section id='features' className='py-20 px-4 bg-white'>
+    <section id='outcomes' className='py-20 px-4 bg-white'>
       <div className='container mx-auto max-w-6xl'>
         <div className='text-center mb-16'>
           <h2 className='text-4xl md:text-5xl font-bold text-slate-900 mb-4'>
-            Powerful Features That Drive Results
+            Turn your data into outcomes
           </h2>
-          <p className='text-xl text-slate-600 max-w-2xl mx-auto'>
-            Everything you need to transform your dealership's revenue engine
+          <p className='text-lg text-slate-600 max-w-3xl mx-auto'>
+            AI-powered campaigns that deliver measurable results across your dealership
           </p>
         </div>
-        <div className='grid md:grid-cols-2 gap-8'>
-          <Card className='bg-white border border-slate-200 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1'>
-            <CardContent className='p-8'>
-              <div className='bg-blue-100 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-md'>
-                <Phone className='h-8 w-8 text-blue-600' />
+        <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-6'>
+          <Card className='bg-white border border-slate-200 hover:shadow-lg transition-all'>
+            <CardContent className='p-6 text-left'>
+              <div className='bg-blue-100 w-12 h-12 rounded-xl flex items-center justify-center mb-4'>
+                <Users className='h-6 w-6 text-blue-600' />
               </div>
-              <h3 className='text-2xl font-bold text-slate-900 mb-4'>
-                Handle Inbound Calls
+              <h3 className='text-xl font-bold text-slate-900 mb-3'>
+                Dormant Leads
               </h3>
-              <p className='text-slate-600 text-lg mb-4 leading-relaxed'>
-                Our AI answers inbound service and sales calls to schedule
-                appointments, freeing up your staff
+              <p className='text-slate-600 text-sm mb-4 leading-relaxed'>
+                Revive old leads with AI timing & content to turn silence into visits, appraisals, and bookings.
               </p>
-              <ul className='space-y-3'>
-                <li className='flex items-start gap-3 text-slate-600'>
-                  <CheckCircle2 className='h-5 w-5 text-green-600 mt-1 flex-shrink-0' />
-                  <span>24/7 availability</span>
-                </li>
-                <li className='flex items-start gap-3 text-slate-600'>
-                  <CheckCircle2 className='h-5 w-5 text-green-600 mt-1 flex-shrink-0' />
-                  <span>Natural conversation flow</span>
-                </li>
-                <li className='flex items-start gap-3 text-slate-600'>
-                  <CheckCircle2 className='h-5 w-5 text-green-600 mt-1 flex-shrink-0' />
-                  <span>Automatic appointment booking</span>
-                </li>
-              </ul>
+              <a href='#' className='text-blue-600 hover:text-blue-700 text-sm font-medium'>
+                Learn more →
+              </a>
             </CardContent>
           </Card>
-          <Card className='bg-white border border-slate-200 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1'>
-            <CardContent className='p-8'>
-              <div className='bg-green-100 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-md'>
-                <Zap className='h-8 w-8 text-green-600' />
+          <Card className='bg-white border border-slate-200 hover:shadow-lg transition-all'>
+            <CardContent className='p-6 text-left'>
+              <div className='bg-blue-100 w-12 h-12 rounded-xl flex items-center justify-center mb-4'>
+                <Wrench className='h-6 w-6 text-blue-600' />
               </div>
-              <h3 className='text-2xl font-bold text-slate-900 mb-4'>
-                Instantly Engage Every Lead
+              <h3 className='text-xl font-bold text-slate-900 mb-3'>
+                Service Bookings
               </h3>
-              <p className='text-slate-600 text-lg mb-4 leading-relaxed'>
-                Turn every web lead into a qualified appointment, day or night
+              <p className='text-slate-600 text-sm mb-4 leading-relaxed'>
+                14/7/1-day reminders fill bays on time and lift RO value.
               </p>
-              <ul className='space-y-3'>
-                <li className='flex items-start gap-3 text-slate-600'>
-                  <CheckCircle2 className='h-5 w-5 text-green-600 mt-1 flex-shrink-0' />
-                  <span>Instant response times</span>
-                </li>
-                <li className='flex items-start gap-3 text-slate-600'>
-                  <CheckCircle2 className='h-5 w-5 text-green-600 mt-1 flex-shrink-0' />
-                  <span>Multi-channel engagement</span>
-                </li>
-                <li className='flex items-start gap-3 text-slate-600'>
-                  <CheckCircle2 className='h-5 w-5 text-green-600 mt-1 flex-shrink-0' />
-                  <span>Lead qualification & scoring</span>
-                </li>
-              </ul>
+              <a href='#' className='text-blue-600 hover:text-blue-700 text-sm font-medium'>
+                Learn more →
+              </a>
             </CardContent>
           </Card>
-          <Card className='bg-white border border-slate-200 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1'>
-            <CardContent className='p-8'>
-              <div className='bg-purple-100 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-md'>
-                <Calendar className='h-8 w-8 text-purple-600' />
+          <Card className='bg-white border border-slate-200 hover:shadow-lg transition-all'>
+            <CardContent className='p-6 text-left'>
+              <div className='bg-blue-100 w-12 h-12 rounded-xl flex items-center justify-center mb-4'>
+                <TrendingUp className='h-6 w-6 text-blue-600' />
               </div>
-              <h3 className='text-2xl font-bold text-slate-900 mb-4'>
-                Proactively Generate Service Appointments
+              <h3 className='text-xl font-bold text-slate-900 mb-3'>
+                Trade-ins
               </h3>
-              <p className='text-slate-600 text-lg mb-4 leading-relaxed'>
-                Automatically contact customers due for service and deferred
-                services and get them on the books
+              <p className='text-slate-600 text-sm mb-4 leading-relaxed'>
+                Equity math (valuation - payoff) triggers upgrade emails and appraisal bookings.
               </p>
-              <ul className='space-y-3'>
-                <li className='flex items-start gap-3 text-slate-600'>
-                  <CheckCircle2 className='h-5 w-5 text-green-600 mt-1 flex-shrink-0' />
-                  <span>Automated service reminders</span>
-                </li>
-                <li className='flex items-start gap-3 text-slate-600'>
-                  <CheckCircle2 className='h-5 w-5 text-green-600 mt-1 flex-shrink-0' />
-                  <span>Deferred service follow-up</span>
-                </li>
-                <li className='flex items-start gap-3 text-slate-600'>
-                  <CheckCircle2 className='h-5 w-5 text-green-600 mt-1 flex-shrink-0' />
-                  <span>Personalized outreach</span>
-                </li>
-              </ul>
+              <a href='#' className='text-blue-600 hover:text-blue-700 text-sm font-medium'>
+                Learn more →
+              </a>
             </CardContent>
           </Card>
-          <Card className='bg-white border border-slate-200 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1'>
-            <CardContent className='p-8'>
-              <div className='bg-orange-100 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-md'>
-                <Database className='h-8 w-8 text-orange-600' />
+          <Card className='bg-white border border-slate-200 hover:shadow-lg transition-all'>
+            <CardContent className='p-6 text-left'>
+              <div className='bg-blue-100 w-12 h-12 rounded-xl flex items-center justify-center mb-4'>
+                <ShoppingBag className='h-6 w-6 text-blue-600' />
               </div>
-              <h3 className='text-2xl font-bold text-slate-900 mb-4'>
-                Mine Your DMS for Hidden Sales
+              <h3 className='text-xl font-bold text-slate-900 mb-3'>
+                After-sales
               </h3>
-              <p className='text-slate-600 text-lg mb-4 leading-relaxed'>
-                Proactively identify and engage with high-potential sales
-                opportunities within your existing customer data
+              <p className='text-slate-600 text-sm mb-4 leading-relaxed'>
+                Post-service NPS prompts accessories and parts upsells.
               </p>
-              <ul className='space-y-3'>
-                <li className='flex items-start gap-3 text-slate-600'>
-                  <CheckCircle2 className='h-5 w-5 text-green-600 mt-1 flex-shrink-0' />
-                  <span>AI-powered opportunity detection</span>
-                </li>
-                <li className='flex items-start gap-3 text-slate-600'>
-                  <CheckCircle2 className='h-5 w-5 text-green-600 mt-1 flex-shrink-0' />
-                  <span>Customer lifecycle tracking</span>
-                </li>
-                <li className='flex items-start gap-3 text-slate-600'>
-                  <CheckCircle2 className='h-5 w-5 text-green-600 mt-1 flex-shrink-0' />
-                  <span>Automated sales outreach</span>
-                </li>
-              </ul>
+              <a href='#' className='text-blue-600 hover:text-blue-700 text-sm font-medium'>
+                Learn more →
+              </a>
             </CardContent>
           </Card>
+        </div>
+        <div className='text-center mt-12'>
+          <Button
+            className='bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg shadow-sm'
+          >
+            Explore all outcomes →
+          </Button>
         </div>
       </div>
     </section>

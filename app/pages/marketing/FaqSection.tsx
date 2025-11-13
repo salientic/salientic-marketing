@@ -45,7 +45,7 @@ const faqs: FaqItem[] = [
 
 export function FaqSection() {
   return (
-    <section className='py-20 px-4 bg-white'>
+    <section id='faq' className='py-20 px-4 bg-white'>
       <div className='container mx-auto max-w-4xl'>
         <div className='text-center mb-16'>
           <h2 className='text-4xl md:text-5xl font-bold text-slate-900 mb-4'>

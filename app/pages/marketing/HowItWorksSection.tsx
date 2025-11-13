@@ -1,62 +1,63 @@
+import { Button } from "~/components/atoms/button";
+import { Upload, Settings, Send } from "lucide-react";
+
 export function HowItWorksSection() {
   return (
-    <section id='how-it-works' className='py-20 px-4 bg-slate-50'>
+    <section id='how-it-works' className='py-20 px-4 bg-gradient-to-br from-cyan-50 via-blue-50 to-cyan-50'>
       <div className='container mx-auto max-w-6xl'>
         <div className='text-center mb-16'>
           <h2 className='text-4xl md:text-5xl font-bold text-slate-900 mb-4'>
-            How It Works
+            Three steps to automated campaigns
           </h2>
-          <p className='text-xl text-slate-600 max-w-2xl mx-auto'>
-            From integration to revenue generation in four simple steps
+          <p className='text-base text-slate-600 max-w-3xl mx-auto'>
+            AI prioritizes Recall → Service → Equity, personalizes by VIN, and respects caps, consent, and quiet hours
           </p>
         </div>
-        <div className='grid md:grid-cols-4 gap-8'>
-          <div className='relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1'>
-            <div className='bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto shadow-lg'>
-              01
+        <div className='grid md:grid-cols-3 gap-12 mb-12'>
+          <div className='text-center'>
+            <div className='bg-blue-600 text-white w-16 h-16 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-sm'>
+              <Upload className='h-8 w-8' />
             </div>
-            <h3 className='text-xl font-bold text-slate-900 mb-4 text-center'>
-              Integrate
+            <div className='text-sm text-slate-500 mb-2'>Step 1</div>
+            <h3 className='text-2xl font-bold text-slate-900 mb-4'>
+              Upload
             </h3>
-            <p className='text-slate-600 text-center leading-relaxed'>
-              We connect to your existing DMS and CRM
+            <p className='text-slate-600 leading-relaxed'>
+              Upload your CRM/DMS export. No lists to build.
             </p>
           </div>
-          <div className='relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1'>
-            <div className='bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto shadow-lg'>
-              02
+          <div className='text-center'>
+            <div className='bg-blue-600 text-white w-16 h-16 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-sm'>
+              <Settings className='h-8 w-8' />
             </div>
-            <h3 className='text-xl font-bold text-slate-900 mb-4 text-center'>
-              Analyze
+            <div className='text-sm text-slate-500 mb-2'>Step 2</div>
+            <h3 className='text-2xl font-bold text-slate-900 mb-4'>
+              AI decides
             </h3>
-            <p className='text-slate-600 text-center leading-relaxed'>
-              Our AI identifies revenue opportunities in your data
+            <p className='text-slate-600 leading-relaxed'>
+              Auto-segment leads, prioritize campaigns, enforce rules and consent.
             </p>
           </div>
-          <div className='relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1'>
-            <div className='bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto shadow-lg'>
-              03
+          <div className='text-center'>
+            <div className='bg-blue-600 text-white w-16 h-16 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-sm'>
+              <Send className='h-8 w-8' />
             </div>
-            <h3 className='text-xl font-bold text-slate-900 mb-4 text-center'>
-              Engage
+            <div className='text-sm text-slate-500 mb-2'>Step 3</div>
+            <h3 className='text-2xl font-bold text-slate-900 mb-4'>
+              Sends & tracks
             </h3>
-            <p className='text-slate-600 text-center leading-relaxed'>
-              The AI launches automated, human-like conversations via voice,
-              SMS, and email
+            <p className='text-slate-600 leading-relaxed'>
+              Personalized emails with dashboards showing bookings and policy transparency.
             </p>
           </div>
-          <div className='relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1'>
-            <div className='bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto shadow-lg'>
-              04
-            </div>
-            <h3 className='text-xl font-bold text-slate-900 mb-4 text-center'>
-              Deliver
-            </h3>
-            <p className='text-slate-600 text-center leading-relaxed'>
-              We deliver appointment-set, pre-qualified customers to your
-              teams
-            </p>
-          </div>
+        </div>
+        <div className='text-center'>
+          <Button
+            variant='outline'
+            className='border-2 border-slate-300 text-slate-700 hover:bg-slate-50 px-8 py-3 rounded-lg'
+          >
+            See how it works in detail
+          </Button>
         </div>
       </div>
     </section>

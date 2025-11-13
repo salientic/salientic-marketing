@@ -8,7 +8,8 @@
       "Bash(find:*)",
       "Bash(npm run build:*)",
       "Bash(pnpm run build:*)",
-      "Bash(nvm use:*)"
+      "Bash(nvm use:*)",
+      "WebFetch(domain:auto-drive-outcomes.lovable.app)"
     ],
     "deny": [],
     "ask": []
