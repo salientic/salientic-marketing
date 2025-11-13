@@ -17,15 +17,18 @@ export function HeroSection() {
               size='lg'
               className='bg-blue-600 hover:bg-blue-700 text-white text-base px-8 py-6 shadow-sm rounded-lg'
               onClick={() => {
-                document.getElementById('contact-us')?.scrollIntoView({ behavior: 'smooth' });
+                document.getElementById('partners')?.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              Book a demo
+              Become a design partner
             </Button>
             <Button
               size='lg'
               variant='outline'
               className='text-base px-8 py-6 border-2 border-slate-300 text-slate-700 hover:bg-slate-50 rounded-lg'
+              onClick={() => {
+                document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               See how it works
             </Button>

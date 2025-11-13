@@ -1,5 +1,14 @@
 import { useState } from "react";
-import { Menu, X, Upload, Settings, Send, TrendingUp, Shield, Clock } from "lucide-react";
+import {
+  Menu,
+  X,
+  Upload,
+  Settings,
+  Send,
+  TrendingUp,
+  Shield,
+  Clock,
+} from "lucide-react";
 import { Button } from "~/components/atoms/button";
 import { Card, CardContent } from "~/components/molecules/card";
 
@@ -40,18 +49,6 @@ export default function HowItWorksPage() {
                 How it works
               </a>
               <a
-                href='/proof'
-                className='text-slate-700 hover:text-blue-600 transition-colors text-sm'
-              >
-                Proof
-              </a>
-              <a
-                href='/pricing'
-                className='text-slate-700 hover:text-blue-600 transition-colors text-sm'
-              >
-                Pricing
-              </a>
-              <a
                 href='/faq'
                 className='text-slate-700 hover:text-blue-600 transition-colors text-sm'
               >
@@ -60,10 +57,10 @@ export default function HowItWorksPage() {
               <Button
                 className='bg-blue-600 hover:bg-blue-700 text-white shadow-sm rounded-lg px-6 py-2'
                 onClick={() => {
-                  window.location.href = '/#contact-us';
+                  window.location.href = "/#contact-us";
                 }}
               >
-                Book a demo
+                Contact us
               </Button>
             </div>
 
@@ -99,20 +96,6 @@ export default function HowItWorksPage() {
                 How it works
               </a>
               <a
-                href='/proof'
-                className='block text-slate-700 hover:text-blue-600 transition-colors py-2'
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Proof
-              </a>
-              <a
-                href='/pricing'
-                className='block text-slate-700 hover:text-blue-600 transition-colors py-2'
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Pricing
-              </a>
-              <a
                 href='/faq'
                 className='block text-slate-700 hover:text-blue-600 transition-colors py-2'
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -123,10 +106,10 @@ export default function HowItWorksPage() {
                 className='w-full bg-blue-600 hover:bg-blue-700 text-white shadow-sm rounded-lg'
                 onClick={() => {
                   setIsMobileMenuOpen(false);
-                  window.location.href = '/#contact-us';
+                  window.location.href = "/#contact-us";
                 }}
               >
-                Book a demo
+                Contact us
               </Button>
             </div>
           )}
@@ -153,36 +136,44 @@ export default function HowItWorksPage() {
               <div className='bg-blue-600 text-white w-16 h-16 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-sm'>
                 <Upload className='h-8 w-8' />
               </div>
-              <div className='text-sm text-blue-600 mb-2 font-medium'>Step 1</div>
-              <h3 className='text-2xl font-bold text-slate-900 mb-4'>
-                Upload
-              </h3>
+              <div className='text-sm text-blue-600 mb-2 font-medium'>
+                Step 1
+              </div>
+              <h3 className='text-2xl font-bold text-slate-900 mb-4'>Upload</h3>
               <p className='text-slate-600 leading-relaxed'>
-                Upload your CRM/DMS export (.csv, API). No manual list building, segmentation, or rules needed.
+                Upload your CRM/DMS export (.csv, API). No manual list building,
+                segmentation, or rules needed.
               </p>
             </div>
             <div className='text-center'>
               <div className='bg-blue-600 text-white w-16 h-16 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-sm'>
                 <Settings className='h-8 w-8' />
               </div>
-              <div className='text-sm text-blue-600 mb-2 font-medium'>Step 2</div>
+              <div className='text-sm text-blue-600 mb-2 font-medium'>
+                Step 2
+              </div>
               <h3 className='text-2xl font-bold text-slate-900 mb-4'>
                 AI decides
               </h3>
               <p className='text-slate-600 leading-relaxed'>
-                AI auto-segments leads by priority (Recall → Service → Equity), enforces caps, exclusions, and quiet hours automatically.
+                AI auto-segments leads by priority (Recall → Service → Equity),
+                enforces caps, exclusions, and quiet hours automatically.
               </p>
             </div>
             <div className='text-center'>
               <div className='bg-blue-600 text-white w-16 h-16 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-sm'>
                 <Send className='h-8 w-8' />
               </div>
-              <div className='text-sm text-blue-600 mb-2 font-medium'>Step 3</div>
+              <div className='text-sm text-blue-600 mb-2 font-medium'>
+                Step 3
+              </div>
               <h3 className='text-2xl font-bold text-slate-900 mb-4'>
                 Sends & tracks
               </h3>
               <p className='text-slate-600 leading-relaxed'>
-                Personalized emails sent via your ESP. Dashboards show bookings, RO proxy, trade-in leads, and transparent (Suppressed / Policy) reasons.
+                Personalized emails sent via your ESP. Dashboards show bookings,
+                RO proxy, trade-in leads, and transparent (Suppressed / Policy)
+                reasons.
               </p>
             </div>
           </div>
@@ -197,7 +188,8 @@ export default function HowItWorksPage() {
               AI decisioning under the hood
             </h2>
             <p className='text-lg text-slate-600 max-w-3xl mx-auto'>
-              AI decides who gets what and when—then shows why, with transparent suppression reasons
+              AI decides who gets what and when—then shows why, with transparent
+              suppression reasons
             </p>
           </div>
           <div className='grid md:grid-cols-3 gap-8'>
@@ -210,7 +202,9 @@ export default function HowItWorksPage() {
                   Priority Arbitration
                 </h3>
                 <p className='text-slate-600 text-sm leading-relaxed'>
-                  When a lead qualifies for multiple campaigns, AI prioritizes: Recall alerts → Service reminders → Equity upgrades. Highest-value action wins.
+                  When a lead qualifies for multiple campaigns, AI prioritizes:
+                  Recall alerts → Service reminders → Equity upgrades.
+                  Highest-value action wins.
                 </p>
               </CardContent>
             </Card>
@@ -223,7 +217,9 @@ export default function HowItWorksPage() {
                   Caps & Consent
                 </h3>
                 <p className='text-slate-600 text-sm leading-relaxed'>
-                  2 emails/week cap per lead. Unsubscribe and Do Not Contact lists honored. SHPR/ADM/DARC authentication ensures deliverability.
+                  2 emails/week cap per lead. Unsubscribe and Do Not Contact
+                  lists honored. SHPR/ADM/DARC authentication ensures
+                  deliverability.
                 </p>
               </CardContent>
             </Card>
@@ -236,7 +232,8 @@ export default function HowItWorksPage() {
                   Quiet Hours
                 </h3>
                 <p className='text-slate-600 text-sm leading-relaxed'>
-                  No sends between 9 PM and 8 AM local time. AI adjusts for time zones and schedules optimal send windows.
+                  No sends between 9 PM and 8 AM local time. AI adjusts for time
+                  zones and schedules optimal send windows.
                 </p>
               </CardContent>
             </Card>
@@ -298,40 +295,55 @@ export default function HowItWorksPage() {
           <div className='grid md:grid-cols-2 gap-8'>
             <Card className='bg-white border border-slate-200'>
               <CardContent className='p-8'>
-                <div className='text-sm text-blue-600 mb-4 font-semibold'>Service Due Reminder</div>
+                <div className='text-sm text-blue-600 mb-4 font-semibold'>
+                  Service Due Reminder
+                </div>
                 <div className='bg-slate-50 p-6 rounded-lg'>
-                  <div className='text-xs text-slate-500 mb-2'>To: customer@email.com</div>
+                  <div className='text-xs text-slate-500 mb-2'>
+                    To: customer@email.com
+                  </div>
                   <div className='font-semibold text-slate-900 mb-4'>
                     Subject: Your [Vehicle] is due for service in 7 days
                   </div>
                   <p className='text-sm text-slate-700 leading-relaxed'>
                     Hi [Name],
-                    <br /><br />
-                    Your [Year Make Model] is due for its [Service Type] on [Date]. Book now and get a free multi-point inspection.
-                    <br /><br />
+                    <br />
+                    <br />
+                    Your [Year Make Model] is due for its [Service Type] on
+                    [Date]. Book now and get a free multi-point inspection.
+                    <br />
+                    <br />
                     [Book Service Button]
-                    <br /><br />
-                    — Service Team, [Dealership Name]
+                    <br />
+                    <br />— Service Team, [Dealership Name]
                   </p>
                 </div>
               </CardContent>
             </Card>
             <Card className='bg-white border border-slate-200'>
               <CardContent className='p-8'>
-                <div className='text-sm text-blue-600 mb-4 font-semibold'>Equity Upgrade</div>
+                <div className='text-sm text-blue-600 mb-4 font-semibold'>
+                  Equity Upgrade
+                </div>
                 <div className='bg-slate-50 p-6 rounded-lg'>
-                  <div className='text-xs text-slate-500 mb-2'>To: customer@email.com</div>
+                  <div className='text-xs text-slate-500 mb-2'>
+                    To: customer@email.com
+                  </div>
                   <div className='font-semibold text-slate-900 mb-4'>
                     Subject: Your [Vehicle] has $[Amount] in equity—upgrade?
                   </div>
                   <p className='text-sm text-slate-700 leading-relaxed'>
                     Hi [Name],
-                    <br /><br />
-                    Great news! Your [Year Make Model] has approximately $[Amount] in positive equity. Trade up to a newer model with minimal out-of-pocket cost.
-                    <br /><br />
+                    <br />
+                    <br />
+                    Great news! Your [Year Make Model] has approximately
+                    $[Amount] in positive equity. Trade up to a newer model with
+                    minimal out-of-pocket cost.
+                    <br />
+                    <br />
                     [Get Appraisal Button]
-                    <br /><br />
-                    — Sales Team, [Dealership Name]
+                    <br />
+                    <br />— Sales Team, [Dealership Name]
                   </p>
                 </div>
               </CardContent>
@@ -347,16 +359,16 @@ export default function HowItWorksPage() {
             See it in action
           </h2>
           <p className='text-xl text-blue-100 mb-10'>
-            Book a demo and we'll walk you through the entire system
+            Contact us and we'll walk you through the entire system
           </p>
           <Button
             size='lg'
             className='bg-slate-900 text-white hover:bg-slate-800 text-lg px-10 py-6 shadow-lg rounded-lg'
             onClick={() => {
-              window.location.href = '/#contact-us';
+              window.location.href = "/#contact-us";
             }}
           >
-            Book a demo
+            Contact us
           </Button>
         </div>
       </section>
@@ -372,7 +384,9 @@ export default function HowItWorksPage() {
                   alt='Salientic Logo'
                   className='h-8 w-8 object-contain'
                 />
-                <span className='text-lg font-bold text-slate-900'>Salientic</span>
+                <span className='text-lg font-bold text-slate-900'>
+                  Salientic
+                </span>
               </div>
               <p className='text-slate-600 text-sm leading-relaxed'>
                 AI campaigns system for auto dealerships
@@ -397,47 +411,6 @@ export default function HowItWorksPage() {
                     How it works
                   </a>
                 </li>
-                <li>
-                  <a
-                    href='/proof'
-                    className='hover:text-blue-600 transition-colors'
-                  >
-                    Proof
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href='/pricing'
-                    className='hover:text-blue-600 transition-colors'
-                  >
-                    Pricing
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className='font-bold mb-4 text-sm text-slate-900'>Company</h4>
-              <ul className='space-y-3 text-slate-600 text-sm'>
-                <li>
-                  <a
-                    href='/sample.pdf'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='hover:text-blue-600 transition-colors'
-                  >
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href='/sample.pdf'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='hover:text-blue-600 transition-colors'
-                  >
-                    Terms of Service
-                  </a>
-                </li>
               </ul>
             </div>
             <div>
@@ -456,7 +429,7 @@ export default function HowItWorksPage() {
                     href='/#contact-us'
                     className='hover:text-blue-600 transition-colors'
                   >
-                    Book a demo
+                    Contact us
                   </a>
                 </li>
               </ul>

@@ -66,7 +66,7 @@ export default function PricingPage() {
               <Button
                 className='bg-blue-600 hover:bg-blue-700 text-white shadow-sm rounded-lg px-6 py-2'
                 onClick={() => {
-                  window.location.href = '/#contact-us';
+                  window.location.href = "/#contact-us";
                 }}
               >
                 Book a demo
@@ -129,7 +129,7 @@ export default function PricingPage() {
                 className='w-full bg-blue-600 hover:bg-blue-700 text-white shadow-sm rounded-lg'
                 onClick={() => {
                   setIsMobileMenuOpen(false);
-                  window.location.href = '/#contact-us';
+                  window.location.href = "/#contact-us";
                 }}
               >
                 Book a demo
@@ -142,11 +142,44 @@ export default function PricingPage() {
       {/* Hero Section */}
       <section className='pt-32 pb-12 px-4 bg-white'>
         <div className='container mx-auto max-w-5xl text-center'>
+          <div className='inline-block mb-6'>
+            <span className='bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold'>
+              🎉 Early Adopter Pricing
+            </span>
+          </div>
           <h1 className='text-5xl md:text-6xl font-bold text-slate-900 mb-6'>
             Simple, transparent pricing
           </h1>
-          <p className='text-xl text-slate-600'>
-            Pay based on your monthly active leads. All features included.
+          <p className='text-xl text-slate-600 mb-4'>
+            Pay only for active leads. No setup fees, no long-term contracts.
+          </p>
+          <div className='flex flex-wrap justify-center gap-6 text-slate-600 mt-8'>
+            <div className='flex items-center gap-2'>
+              <Check className='h-5 w-5 text-green-600' />
+              <span className='text-base font-medium'>
+                Zero upfront commitment
+              </span>
+            </div>
+            <div className='flex items-center gap-2'>
+              <Check className='h-5 w-5 text-green-600' />
+              <span className='text-base font-medium'>
+                Performance-based pricing
+              </span>
+            </div>
+            <div className='flex items-center gap-2'>
+              <Check className='h-5 w-5 text-green-600' />
+              <span className='text-base font-medium'>Cancel anytime</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Early Adopter Banner */}
+      <section className='py-8 px-4 bg-gradient-to-r from-blue-600 to-blue-700'>
+        <div className='container mx-auto max-w-5xl text-center'>
+          <p className='text-white text-lg font-medium'>
+            🚀 Early adopters get <strong>lifetime priority support</strong> and{" "}
+            <strong>first access to new features</strong>
           </p>
         </div>
       </section>
@@ -158,17 +191,28 @@ export default function PricingPage() {
             {/* Starter */}
             <Card className='bg-white border-2 border-slate-200 shadow-lg'>
               <CardContent className='p-8'>
-                <h3 className='text-2xl font-bold text-slate-900 mb-2'>Starter</h3>
-                <p className='text-slate-600 mb-6'>For single-location dealerships</p>
+                <h3 className='text-2xl font-bold text-slate-900 mb-2'>
+                  Starter
+                </h3>
+                <p className='text-slate-600 mb-6'>
+                  Perfect for single-location stores
+                </p>
                 <div className='mb-6'>
-                  <span className='text-5xl font-bold text-slate-900'>$299</span>
+                  <span className='text-5xl font-bold text-slate-900'>
+                    $299
+                  </span>
                   <span className='text-slate-600'>/month</span>
                 </div>
-                <p className='text-sm text-slate-600 mb-8'>Up to 2,500 monthly active leads</p>
+                <p className='text-sm text-slate-600 mb-2'>
+                  Up to 2,500 active leads/month
+                </p>
+                <p className='text-xs text-slate-500 mb-8'>
+                  Only pay for leads that receive emails
+                </p>
                 <Button
                   className='w-full bg-blue-600 hover:bg-blue-700 text-white rounded-lg py-6 mb-8'
                   onClick={() => {
-                    window.location.href = '/#contact-us';
+                    window.location.href = "/#contact-us";
                   }}
                 >
                   Start pilot
@@ -176,27 +220,39 @@ export default function PricingPage() {
                 <ul className='space-y-3'>
                   <li className='flex items-start gap-3'>
                     <Check className='h-5 w-5 text-green-600 flex-shrink-0 mt-0.5' />
-                    <span className='text-slate-700 text-sm'>AI decisioning & arbitration</span>
+                    <span className='text-slate-700 text-sm'>
+                      AI decisioning & arbitration
+                    </span>
                   </li>
                   <li className='flex items-start gap-3'>
                     <Check className='h-5 w-5 text-green-600 flex-shrink-0 mt-0.5' />
-                    <span className='text-slate-700 text-sm'>Pre-built journeys (Service, Equity, After-sales)</span>
+                    <span className='text-slate-700 text-sm'>
+                      Pre-built journeys (Service, Equity, After-sales)
+                    </span>
                   </li>
                   <li className='flex items-start gap-3'>
                     <Check className='h-5 w-5 text-green-600 flex-shrink-0 mt-0.5' />
-                    <span className='text-slate-700 text-sm'>Caps & quiet hours enforcement</span>
+                    <span className='text-slate-700 text-sm'>
+                      Caps & quiet hours enforcement
+                    </span>
                   </li>
                   <li className='flex items-start gap-3'>
                     <Check className='h-5 w-5 text-green-600 flex-shrink-0 mt-0.5' />
-                    <span className='text-slate-700 text-sm'>Consent & unsubscribe handling</span>
+                    <span className='text-slate-700 text-sm'>
+                      Consent & unsubscribe handling
+                    </span>
                   </li>
                   <li className='flex items-start gap-3'>
                     <Check className='h-5 w-5 text-green-600 flex-shrink-0 mt-0.5' />
-                    <span className='text-slate-700 text-sm'>Analytics dashboard</span>
+                    <span className='text-slate-700 text-sm'>
+                      Analytics dashboard
+                    </span>
                   </li>
                   <li className='flex items-start gap-3'>
                     <Check className='h-5 w-5 text-green-600 flex-shrink-0 mt-0.5' />
-                    <span className='text-slate-700 text-sm'>Email support</span>
+                    <span className='text-slate-700 text-sm'>
+                      Email support
+                    </span>
                   </li>
                 </ul>
               </CardContent>
@@ -210,17 +266,28 @@ export default function PricingPage() {
                 </span>
               </div>
               <CardContent className='p-8'>
-                <h3 className='text-2xl font-bold text-slate-900 mb-2'>Growth</h3>
-                <p className='text-slate-600 mb-6'>For growing dealerships</p>
+                <h3 className='text-2xl font-bold text-slate-900 mb-2'>
+                  Growth
+                </h3>
+                <p className='text-slate-600 mb-6'>
+                  Best for scaling operations
+                </p>
                 <div className='mb-6'>
-                  <span className='text-5xl font-bold text-slate-900'>$599</span>
+                  <span className='text-5xl font-bold text-slate-900'>
+                    $599
+                  </span>
                   <span className='text-slate-600'>/month</span>
                 </div>
-                <p className='text-sm text-slate-600 mb-8'>Up to 7,500 monthly active leads</p>
+                <p className='text-sm text-slate-600 mb-2'>
+                  Up to 7,500 active leads/month
+                </p>
+                <p className='text-xs text-slate-500 mb-8'>
+                  Only pay for leads that receive emails
+                </p>
                 <Button
                   className='w-full bg-blue-600 hover:bg-blue-700 text-white rounded-lg py-6 mb-8'
                   onClick={() => {
-                    window.location.href = '/#contact-us';
+                    window.location.href = "/#contact-us";
                   }}
                 >
                   Start pilot
@@ -228,35 +295,51 @@ export default function PricingPage() {
                 <ul className='space-y-3'>
                   <li className='flex items-start gap-3'>
                     <Check className='h-5 w-5 text-green-600 flex-shrink-0 mt-0.5' />
-                    <span className='text-slate-700 text-sm'>AI decisioning & arbitration</span>
+                    <span className='text-slate-700 text-sm'>
+                      AI decisioning & arbitration
+                    </span>
                   </li>
                   <li className='flex items-start gap-3'>
                     <Check className='h-5 w-5 text-green-600 flex-shrink-0 mt-0.5' />
-                    <span className='text-slate-700 text-sm'>Pre-built journeys (Service, Equity, After-sales)</span>
+                    <span className='text-slate-700 text-sm'>
+                      Pre-built journeys (Service, Equity, After-sales)
+                    </span>
                   </li>
                   <li className='flex items-start gap-3'>
                     <Check className='h-5 w-5 text-green-600 flex-shrink-0 mt-0.5' />
-                    <span className='text-slate-700 text-sm'>Caps & quiet hours enforcement</span>
+                    <span className='text-slate-700 text-sm'>
+                      Caps & quiet hours enforcement
+                    </span>
                   </li>
                   <li className='flex items-start gap-3'>
                     <Check className='h-5 w-5 text-green-600 flex-shrink-0 mt-0.5' />
-                    <span className='text-slate-700 text-sm'>Consent & unsubscribe handling</span>
+                    <span className='text-slate-700 text-sm'>
+                      Consent & unsubscribe handling
+                    </span>
                   </li>
                   <li className='flex items-start gap-3'>
                     <Check className='h-5 w-5 text-green-600 flex-shrink-0 mt-0.5' />
-                    <span className='text-slate-700 text-sm'>Analytics dashboard</span>
+                    <span className='text-slate-700 text-sm'>
+                      Analytics dashboard
+                    </span>
                   </li>
                   <li className='flex items-start gap-3'>
                     <Check className='h-5 w-5 text-green-600 flex-shrink-0 mt-0.5' />
-                    <span className='text-slate-700 text-sm'>Email support</span>
+                    <span className='text-slate-700 text-sm'>
+                      Email support
+                    </span>
                   </li>
                   <li className='flex items-start gap-3'>
                     <Check className='h-5 w-5 text-green-600 flex-shrink-0 mt-0.5' />
-                    <span className='text-slate-700 text-sm font-semibold'>Priority support</span>
+                    <span className='text-slate-700 text-sm font-semibold'>
+                      Priority support
+                    </span>
                   </li>
                   <li className='flex items-start gap-3'>
                     <Check className='h-5 w-5 text-green-600 flex-shrink-0 mt-0.5' />
-                    <span className='text-slate-700 text-sm font-semibold'>Custom journey templates</span>
+                    <span className='text-slate-700 text-sm font-semibold'>
+                      Custom journey templates
+                    </span>
                   </li>
                 </ul>
               </CardContent>
@@ -266,17 +349,24 @@ export default function PricingPage() {
             <Card className='bg-white border-2 border-slate-200 shadow-lg'>
               <CardContent className='p-8'>
                 <h3 className='text-2xl font-bold text-slate-900 mb-2'>Pro</h3>
-                <p className='text-slate-600 mb-6'>For dealer groups</p>
+                <p className='text-slate-600 mb-6'>Built for dealer groups</p>
                 <div className='mb-6'>
-                  <span className='text-5xl font-bold text-slate-900'>$1,199</span>
+                  <span className='text-5xl font-bold text-slate-900'>
+                    $1,199
+                  </span>
                   <span className='text-slate-600'>/month</span>
                 </div>
-                <p className='text-sm text-slate-600 mb-8'>Up to 20,000 monthly active leads</p>
+                <p className='text-sm text-slate-600 mb-2'>
+                  Up to 20,000 active leads/month
+                </p>
+                <p className='text-xs text-slate-500 mb-8'>
+                  Only pay for leads that receive emails
+                </p>
                 <Button
                   variant='outline'
                   className='w-full border-2 border-blue-600 text-blue-600 hover:bg-blue-50 rounded-lg py-6 mb-8'
                   onClick={() => {
-                    window.location.href = '/#contact-us';
+                    window.location.href = "/#contact-us";
                   }}
                 >
                   Talk to sales
@@ -284,39 +374,57 @@ export default function PricingPage() {
                 <ul className='space-y-3'>
                   <li className='flex items-start gap-3'>
                     <Check className='h-5 w-5 text-green-600 flex-shrink-0 mt-0.5' />
-                    <span className='text-slate-700 text-sm'>AI decisioning & arbitration</span>
+                    <span className='text-slate-700 text-sm'>
+                      AI decisioning & arbitration
+                    </span>
                   </li>
                   <li className='flex items-start gap-3'>
                     <Check className='h-5 w-5 text-green-600 flex-shrink-0 mt-0.5' />
-                    <span className='text-slate-700 text-sm'>Pre-built journeys (Service, Equity, After-sales)</span>
+                    <span className='text-slate-700 text-sm'>
+                      Pre-built journeys (Service, Equity, After-sales)
+                    </span>
                   </li>
                   <li className='flex items-start gap-3'>
                     <Check className='h-5 w-5 text-green-600 flex-shrink-0 mt-0.5' />
-                    <span className='text-slate-700 text-sm'>Caps & quiet hours enforcement</span>
+                    <span className='text-slate-700 text-sm'>
+                      Caps & quiet hours enforcement
+                    </span>
                   </li>
                   <li className='flex items-start gap-3'>
                     <Check className='h-5 w-5 text-green-600 flex-shrink-0 mt-0.5' />
-                    <span className='text-slate-700 text-sm'>Consent & unsubscribe handling</span>
+                    <span className='text-slate-700 text-sm'>
+                      Consent & unsubscribe handling
+                    </span>
                   </li>
                   <li className='flex items-start gap-3'>
                     <Check className='h-5 w-5 text-green-600 flex-shrink-0 mt-0.5' />
-                    <span className='text-slate-700 text-sm'>Analytics dashboard</span>
+                    <span className='text-slate-700 text-sm'>
+                      Analytics dashboard
+                    </span>
                   </li>
                   <li className='flex items-start gap-3'>
                     <Check className='h-5 w-5 text-green-600 flex-shrink-0 mt-0.5' />
-                    <span className='text-slate-700 text-sm'>Email support</span>
+                    <span className='text-slate-700 text-sm'>
+                      Email support
+                    </span>
                   </li>
                   <li className='flex items-start gap-3'>
                     <Check className='h-5 w-5 text-green-600 flex-shrink-0 mt-0.5' />
-                    <span className='text-slate-700 text-sm font-semibold'>Dedicated account manager</span>
+                    <span className='text-slate-700 text-sm font-semibold'>
+                      Dedicated account manager
+                    </span>
                   </li>
                   <li className='flex items-start gap-3'>
                     <Check className='h-5 w-5 text-green-600 flex-shrink-0 mt-0.5' />
-                    <span className='text-slate-700 text-sm font-semibold'>Multi-location support</span>
+                    <span className='text-slate-700 text-sm font-semibold'>
+                      Multi-location support
+                    </span>
                   </li>
                   <li className='flex items-start gap-3'>
                     <Check className='h-5 w-5 text-green-600 flex-shrink-0 mt-0.5' />
-                    <span className='text-slate-700 text-sm font-semibold'>Custom integrations</span>
+                    <span className='text-slate-700 text-sm font-semibold'>
+                      Custom integrations
+                    </span>
                   </li>
                 </ul>
               </CardContent>
@@ -339,7 +447,9 @@ export default function PricingPage() {
               <p className='text-slate-600'>Setup time</p>
             </div>
             <div className='text-center'>
-              <div className='text-5xl font-bold text-blue-600 mb-4'>2/week</div>
+              <div className='text-5xl font-bold text-blue-600 mb-4'>
+                2/week
+              </div>
               <p className='text-slate-600'>Email cap per lead</p>
             </div>
             <div className='text-center'>
@@ -359,28 +469,42 @@ export default function PricingPage() {
             </h2>
           </div>
           <Accordion type='single' collapsible className='space-y-4'>
-            <AccordionItem value='item-1' className='border border-slate-200 rounded-lg px-6'>
+            <AccordionItem
+              value='item-1'
+              className='border border-slate-200 rounded-lg px-6'
+            >
               <AccordionTrigger className='text-lg font-semibold text-slate-900 hover:text-blue-600'>
                 What counts as a "monthly active lead"?
               </AccordionTrigger>
               <AccordionContent className='text-slate-600 leading-relaxed'>
-                Any lead in your CRM/DMS that receives at least one email during the billing month. Suppressed leads don't count toward your limit.
+                Any lead in your CRM/DMS that receives at least one email during
+                the billing month. Suppressed leads don't count toward your
+                limit.
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value='item-2' className='border border-slate-200 rounded-lg px-6'>
+            <AccordionItem
+              value='item-2'
+              className='border border-slate-200 rounded-lg px-6'
+            >
               <AccordionTrigger className='text-lg font-semibold text-slate-900 hover:text-blue-600'>
                 Can I cancel anytime?
               </AccordionTrigger>
               <AccordionContent className='text-slate-600 leading-relaxed'>
-                Yes. All plans are month-to-month with no long-term contracts. Cancel anytime with 30 days' notice.
+                Yes. All plans are month-to-month with no long-term contracts.
+                Cancel anytime with 30 days' notice.
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value='item-3' className='border border-slate-200 rounded-lg px-6'>
+            <AccordionItem
+              value='item-3'
+              className='border border-slate-200 rounded-lg px-6'
+            >
               <AccordionTrigger className='text-lg font-semibold text-slate-900 hover:text-blue-600'>
                 What if I exceed my lead limit?
               </AccordionTrigger>
               <AccordionContent className='text-slate-600 leading-relaxed'>
-                We'll notify you before you hit your limit. You can upgrade to the next tier or pay overage charges at $0.15 per additional lead.
+                We'll notify you before you hit your limit. You can upgrade to
+                the next tier or pay overage charges at $0.15 per additional
+                lead.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -400,7 +524,7 @@ export default function PricingPage() {
             size='lg'
             className='bg-slate-900 text-white hover:bg-slate-800 text-lg px-10 py-6 shadow-lg rounded-lg'
             onClick={() => {
-              window.location.href = '/#contact-us';
+              window.location.href = "/#contact-us";
             }}
           >
             Talk to us
@@ -419,7 +543,9 @@ export default function PricingPage() {
                   alt='Salientic Logo'
                   className='h-8 w-8 object-contain'
                 />
-                <span className='text-lg font-bold text-slate-900'>Salientic</span>
+                <span className='text-lg font-bold text-slate-900'>
+                  Salientic
+                </span>
               </div>
               <p className='text-slate-600 text-sm leading-relaxed'>
                 AI campaigns system for auto dealerships
@@ -458,31 +584,6 @@ export default function PricingPage() {
                     className='hover:text-blue-600 transition-colors'
                   >
                     Pricing
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className='font-bold mb-4 text-sm text-slate-900'>Company</h4>
-              <ul className='space-y-3 text-slate-600 text-sm'>
-                <li>
-                  <a
-                    href='/sample.pdf'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='hover:text-blue-600 transition-colors'
-                  >
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href='/sample.pdf'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='hover:text-blue-600 transition-colors'
-                  >
-                    Terms of Service
                   </a>
                 </li>
               </ul>

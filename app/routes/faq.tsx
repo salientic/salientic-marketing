@@ -40,11 +40,6 @@ const faqs: FaqItem[] = [
       "Yes. All plans are month-to-month with no long-term contracts. Cancel anytime with 30 days' notice.",
   },
   {
-    question: "What if I exceed my lead limit?",
-    answer:
-      "We'll notify you before you hit your limit. You can upgrade to the next tier or pay overage charges at $0.15 per additional lead.",
-  },
-  {
     question: "Is my customer data secure?",
     answer:
       "Absolutely. We use enterprise-grade security with end-to-end encryption. Your data is never shared with third parties and we comply with all industry regulations including CCPA and GDPR. We maintain SOC 2 Type II compliance and conduct regular security audits.",
@@ -58,11 +53,6 @@ const faqs: FaqItem[] = [
     question: "How does AI prioritize campaigns?",
     answer:
       "When a lead qualifies for multiple campaigns, AI prioritizes: Recall alerts → Service reminders → Equity upgrades. The highest-value action wins, ensuring we maximize revenue opportunities while respecting email caps.",
-  },
-  {
-    question: "Do you integrate with my existing DMS/CRM?",
-    answer:
-      "Yes. We support all major automotive DMS and CRM systems including CDK, Reynolds & Reynolds, DealerSocket, Elead, and VinSolutions. Integration typically takes less than 48 hours.",
   },
 ];
 
@@ -103,18 +93,6 @@ export default function FaqPage() {
                 How it works
               </a>
               <a
-                href='/proof'
-                className='text-slate-700 hover:text-blue-600 transition-colors text-sm'
-              >
-                Proof
-              </a>
-              <a
-                href='/pricing'
-                className='text-slate-700 hover:text-blue-600 transition-colors text-sm'
-              >
-                Pricing
-              </a>
-              <a
                 href='/faq'
                 className='text-blue-600 hover:text-blue-700 transition-colors text-sm font-medium'
               >
@@ -123,10 +101,10 @@ export default function FaqPage() {
               <Button
                 className='bg-blue-600 hover:bg-blue-700 text-white shadow-sm rounded-lg px-6 py-2'
                 onClick={() => {
-                  window.location.href = '/#contact-us';
+                  window.location.href = "/#contact-us";
                 }}
               >
-                Book a demo
+                Contact us
               </Button>
             </div>
 
@@ -162,20 +140,6 @@ export default function FaqPage() {
                 How it works
               </a>
               <a
-                href='/proof'
-                className='block text-slate-700 hover:text-blue-600 transition-colors py-2'
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Proof
-              </a>
-              <a
-                href='/pricing'
-                className='block text-slate-700 hover:text-blue-600 transition-colors py-2'
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Pricing
-              </a>
-              <a
                 href='/faq'
                 className='block text-blue-600 hover:text-blue-700 transition-colors py-2 font-medium'
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -186,10 +150,10 @@ export default function FaqPage() {
                 className='w-full bg-blue-600 hover:bg-blue-700 text-white shadow-sm rounded-lg'
                 onClick={() => {
                   setIsMobileMenuOpen(false);
-                  window.location.href = '/#contact-us';
+                  window.location.href = "/#contact-us";
                 }}
               >
-                Book a demo
+                Contact us
               </Button>
             </div>
           )}
@@ -237,16 +201,17 @@ export default function FaqPage() {
             Still have questions?
           </h2>
           <p className='text-lg text-slate-600 mb-8'>
-            Our team is here to help. Book a demo and we'll answer all your questions.
+            Our team is here to help. Contact us and we'll answer all your
+            questions.
           </p>
           <Button
             size='lg'
             className='bg-blue-600 hover:bg-blue-700 text-white text-lg px-10 py-6 shadow-sm rounded-lg'
             onClick={() => {
-              window.location.href = '/#contact-us';
+              window.location.href = "/#contact-us";
             }}
           >
-            Book a demo
+            Contact us
           </Button>
         </div>
       </section>
@@ -262,7 +227,9 @@ export default function FaqPage() {
                   alt='Salientic Logo'
                   className='h-8 w-8 object-contain'
                 />
-                <span className='text-lg font-bold text-slate-900'>Salientic</span>
+                <span className='text-lg font-bold text-slate-900'>
+                  Salientic
+                </span>
               </div>
               <p className='text-slate-600 text-sm leading-relaxed'>
                 AI campaigns system for auto dealerships
@@ -287,55 +254,6 @@ export default function FaqPage() {
                     How it works
                   </a>
                 </li>
-                <li>
-                  <a
-                    href='/proof'
-                    className='hover:text-blue-600 transition-colors'
-                  >
-                    Proof
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href='/pricing'
-                    className='hover:text-blue-600 transition-colors'
-                  >
-                    Pricing
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className='font-bold mb-4 text-sm text-slate-900'>Company</h4>
-              <ul className='space-y-3 text-slate-600 text-sm'>
-                <li>
-                  <a
-                    href='/faq'
-                    className='hover:text-blue-600 transition-colors'
-                  >
-                    FAQ
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href='/sample.pdf'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='hover:text-blue-600 transition-colors'
-                  >
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href='/sample.pdf'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='hover:text-blue-600 transition-colors'
-                  >
-                    Terms of Service
-                  </a>
-                </li>
               </ul>
             </div>
             <div>
@@ -354,7 +272,7 @@ export default function FaqPage() {
                     href='/#contact-us'
                     className='hover:text-blue-600 transition-colors'
                   >
-                    Book a demo
+                    Contact us
                   </a>
                 </li>
               </ul>

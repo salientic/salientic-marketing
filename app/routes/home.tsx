@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "~/components/atoms/button";
 import { ContactUsSection } from "~/pages/marketing/ContactUsSection";
+import { DesignPartnerSection } from "~/pages/marketing/DesignPartnerSection";
 import { FeaturesSection } from "~/pages/marketing/FeaturesSection";
 import { FinalCtaSection } from "~/pages/marketing/FinalCtaSection";
 import { HeroSection } from "~/pages/marketing/HeroSection";
@@ -44,18 +45,6 @@ export default function MarketingWebsite() {
                 How it works
               </a>
               <a
-                href='/proof'
-                className='text-slate-700 hover:text-blue-600 transition-colors text-sm'
-              >
-                Proof
-              </a>
-              <a
-                href='/pricing'
-                className='text-slate-700 hover:text-blue-600 transition-colors text-sm'
-              >
-                Pricing
-              </a>
-              <a
                 href='/faq'
                 className='text-slate-700 hover:text-blue-600 transition-colors text-sm'
               >
@@ -69,7 +58,7 @@ export default function MarketingWebsite() {
                     ?.scrollIntoView({ behavior: "smooth" });
                 }}
               >
-                Book a demo
+                Contact us
               </Button>
             </div>
 
@@ -105,20 +94,6 @@ export default function MarketingWebsite() {
                 How it works
               </a>
               <a
-                href='/proof'
-                className='block text-slate-700 hover:text-blue-600 transition-colors py-2'
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Proof
-              </a>
-              <a
-                href='/pricing'
-                className='block text-slate-700 hover:text-blue-600 transition-colors py-2'
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Pricing
-              </a>
-              <a
                 href='/faq'
                 className='block text-slate-700 hover:text-blue-600 transition-colors py-2'
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -134,7 +109,7 @@ export default function MarketingWebsite() {
                     ?.scrollIntoView({ behavior: "smooth" });
                 }}
               >
-                Book a demo
+                Contact us
               </Button>
             </div>
           )}
@@ -151,6 +126,8 @@ export default function MarketingWebsite() {
 
       <TeamSection />
 
+      <DesignPartnerSection />
+
       <FinalCtaSection />
 
       <ContactUsSection />
@@ -158,7 +135,7 @@ export default function MarketingWebsite() {
       {/* Footer */}
       <footer className='bg-white py-16 px-4 border-t border-slate-200'>
         <div className='container mx-auto max-w-6xl'>
-          <div className='grid md:grid-cols-4 gap-12 mb-12'>
+          <div className='grid md:grid-cols-3 gap-12 mb-12'>
             <div>
               <div className='flex items-center gap-3 mb-6'>
                 <img
@@ -189,55 +166,6 @@ export default function MarketingWebsite() {
                     className='hover:text-blue-600 transition-colors'
                   >
                     How it works
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href='/proof'
-                    className='hover:text-blue-600 transition-colors'
-                  >
-                    Proof
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href='/pricing'
-                    className='hover:text-blue-600 transition-colors'
-                  >
-                    Pricing
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className='font-bold mb-4 text-sm text-slate-900'>Company</h4>
-              <ul className='space-y-3 text-slate-600 text-sm'>
-                <li>
-                  <a
-                    href='/faq'
-                    className='hover:text-blue-600 transition-colors'
-                  >
-                    FAQ
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href='/sample.pdf'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='hover:text-blue-600 transition-colors'
-                  >
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href='/sample.pdf'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='hover:text-blue-600 transition-colors'
-                  >
-                    Terms of Service
                   </a>
                 </li>
               </ul>

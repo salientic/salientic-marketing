@@ -55,6 +55,9 @@ export function HowItWorksSection() {
           <Button
             variant='outline'
             className='border-2 border-slate-300 text-slate-700 hover:bg-slate-50 px-8 py-3 rounded-lg'
+            onClick={() => {
+              window.location.href = '/how-it-works';
+            }}
           >
             See how it works in detail
           </Button>
