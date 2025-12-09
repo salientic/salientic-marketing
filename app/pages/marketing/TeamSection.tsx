@@ -65,6 +65,17 @@ const teamMembers: TeamMember[] = [
       linkedin: "https://linkedin.com/in/siddhantloya",
     },
   },
+  {
+    name: "Akshay Mahale",
+    role: "Director of Sales & Business Development",
+    description:
+      "Driving strategic growth and partnerships across USA and India markets.",
+    initials: "AM",
+    image: "/assets/profile-pics/akshay.jpg",
+    social: {
+      linkedin: "https://www.linkedin.com/in/akshay-mahale-71657362",
+    },
+  },
 ];
 
 export function TeamSection() {
@@ -82,13 +93,18 @@ export function TeamSection() {
             The founding team building the future of automotive retail
           </p>
         </div>
-        <div className='grid md:grid-cols-4 gap-6'>
-          {teamMembers.map((member) => {
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 max-w-5xl mx-auto'>
+          {teamMembers.map((member, index) => {
             const { name, role, description, initials, image, imagePosition, social } = member;
+            const isFirstOfLastTwo = teamMembers.length === 5 && index === 3;
+            const gridColClass = isFirstOfLastTwo
+              ? 'lg:col-span-2 lg:col-start-2'
+              : 'lg:col-span-2';
+
             return (
               <Card
                 key={name}
-                className='bg-white border border-slate-200 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1'
+                className={`bg-white border border-slate-200 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 ${gridColClass}`}
               >
                 <CardContent className='p-8 text-center'>
                   <div className='mb-6 flex justify-center'>
