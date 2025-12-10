@@ -31,6 +31,17 @@ const teamMembers: TeamMember[] = [
     },
   },
   {
+    name: "Akshay Mahale",
+    role: "Founding Sales Head",
+    description:
+      "Driving strategic growth and partnerships across USA markets.",
+    initials: "AM",
+    image: "/assets/profile-pics/akshay.jpg",
+    social: {
+      linkedin: "https://www.linkedin.com/in/akshay-mahale-71657362",
+    },
+  },
+  {
     name: "Satya Prasad",
     role: "Founding Product Manager",
     description:
@@ -52,28 +63,6 @@ const teamMembers: TeamMember[] = [
     imagePosition: "center 25%",
     social: {
       linkedin: "https://linkedin.com/in/johndpknt",
-    },
-  },
-  {
-    name: "Siddhant Loya",
-    role: "Founding Engineer",
-    description:
-      "Part of the founding team, building scalable AI infrastructure and intelligent systems.",
-    initials: "SL",
-    image: "/assets/profile-pics/siddhant.jpeg",
-    social: {
-      linkedin: "https://linkedin.com/in/siddhantloya",
-    },
-  },
-  {
-    name: "Akshay Mahale",
-    role: "Director of Sales & Business Development",
-    description:
-      "Driving strategic growth and partnerships across USA and India markets.",
-    initials: "AM",
-    image: "/assets/profile-pics/akshay.jpg",
-    social: {
-      linkedin: "https://www.linkedin.com/in/akshay-mahale-71657362",
     },
   },
 ];
