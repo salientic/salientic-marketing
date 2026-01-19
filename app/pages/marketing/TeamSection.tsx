@@ -53,18 +53,6 @@ const teamMembers: TeamMember[] = [
       linkedin: "https://www.linkedin.com/in/satya-prasad-pamula-4583a456",
     },
   },
-  {
-    name: "John Diptikanta",
-    role: "Founding Engineer",
-    description:
-      "Part of the founding team, architecting intelligent automation and platform solutions.",
-    initials: "JD",
-    image: "/assets/profile-pics/john.jpeg",
-    imagePosition: "center 25%",
-    social: {
-      linkedin: "https://linkedin.com/in/johndpknt",
-    },
-  },
 ];
 
 export function TeamSection() {
