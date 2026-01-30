@@ -1,5 +1,5 @@
 import type { Route } from "./+types/home";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "~/components/atoms/button";
 import { ContactUsSection } from "~/pages/marketing/ContactUsSection";
@@ -13,6 +13,17 @@ import { TeamSection } from "~/pages/marketing/TeamSection";
 
 export default function MarketingWebsite() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      setTimeout(() => {
+        const element = document.getElementById(hash.slice(1));
+        element?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
+  }, []);
+
   return (
     <div className='min-h-screen bg-white overflow-y-auto absolute inset-0 scroll-smooth'>
       {/* Navigation */}
